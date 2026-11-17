@@ -1,0 +1,54 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.app { 
+  display: flex;
+  height: 100vh;
+  font-family: system-ui, sans-serif;
+}
+
+.sidebar {
+  width: 220px;
+  background: #1e1e2e;
+  color: #ddd;
+  padding: 12px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 6px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.sidebar li.active {
+  background: #3b3b5c;
+}
+
+.main { 
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs {
+  padding: 8px 12px;
+  background: #2a2a3c;
+  color: #fff;
+}
+
+.editor {
+  flex: 1;
+  border: none;
+  padding: 16px;
+  font-family: monospace;
+  font-size: 14px;
+  resize: none;
+  outline: none;
+}
